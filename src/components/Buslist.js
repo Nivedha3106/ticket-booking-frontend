@@ -35,7 +35,7 @@ class BusList extends Component {
     this.setState({
       name: event.target.value,
     });
-    // eslint-disable-next-line no-console
+    
     console.log(this.state.name);
   }
 
@@ -43,7 +43,7 @@ class BusList extends Component {
     this.setState({
       source: event.target.value,
     });
-    // eslint-disable-next-line no-console
+    
     console.log(this.state.source);
   }
 
@@ -51,7 +51,7 @@ class BusList extends Component {
     this.setState({
       dest: event.target.value,
     });
-    // eslint-disable-next-line no-console
+    
     console.log(this.state.dest);
   }
 
@@ -59,7 +59,6 @@ class BusList extends Component {
     this.setState({
       fare: event.target.value,
     });
-    // eslint-disable-next-line no-console
     console.log(this.state.date);
   }
 
@@ -78,7 +77,6 @@ class BusList extends Component {
     }
 
     onSubmit(event) {
-      // eslint-disable-next-line no-console
       console.log('Enter the bus details');
       event.preventDefault();
       const register = {
@@ -92,18 +90,13 @@ class BusList extends Component {
       axios.post('https://online-bus-ticket-booking.herokuapp.com/api/bookings/store', register)
         .then((response) => {
           if (response) {
-            // eslint-disable-next-line no-console
             console.log(response);
-            // eslint-disable-next-line no-alert
             alert('Bus details added successfully');
             window.location.href = '/Home';
           } else {
-            // eslint-disable-next-line no-alert
             alert('Failed to add');
           }
         });
-
-      // eslint-disable-next-line no-alert
       alert(`Are you submitting ${this.state.name}`);
     }
 
@@ -142,9 +135,7 @@ class BusList extends Component {
                 <td><input type="text" name="time" placeholder="Time" value={this.time} onChange={this.changeTime} required /></td>
               </tr>
               <tr aria-colspan="2">
-                // eslint-disable-next-line react/jsx-no-comment-textnodes
                 <td>
-                  // eslint-disable-next-line react/button-has-type
                   <button
                     onClick={this.onSubmit}
                     style={{

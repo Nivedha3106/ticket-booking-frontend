@@ -24,6 +24,7 @@ import Seat from './components/Seat';
 import Open from './components/open';
 import Close from './components/close';
 import Seatstore from './components/Seatstore';
+import Navbar from './components/Navbar';   
 
 const App = () => (
   <Router>
@@ -37,7 +38,7 @@ const App = () => (
     <Route path="/delete" component={Delete} />
     <Route path="/Seat" component={Seat} />
     <Route path="/open" component={Open} />
-   
+    <Route path="/Navbar" component={Navbar} />
     <Route path="/close" component={Close} />
     
     <Route path="/seatstore" component={Seatstore} />

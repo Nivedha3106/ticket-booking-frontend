@@ -10,7 +10,7 @@ import axios from 'axios';
 
 const Close = () => {
   const handleClick = () => {
-    window.location.href = '/User';
+    window.location.href = '/Home';
   };
   const [close, setclose] = useState([]);
   const [Loading, setLoading] = useState(false);
@@ -24,10 +24,9 @@ const Close = () => {
     return (
       <div className="App">
         <Navbar />
-        <div className="contene">
+        <div className="content">
           <h2 style={{ color: 'crimson' }}>Open Seats</h2>
-          {close.response.map((value, key) => {
-            // eslint-disable-next-line no-console
+          {close.map((value, key) => {
             console.log(value, key);
             return (
               <div className="home">
@@ -40,7 +39,7 @@ const Close = () => {
                     padding: '10px',
                     marginLeft: '250px',
                     marginTop: '30px',
-                    width: '130px',
+                    width: '50px',
                     fontSize: '18px',
                     fontWeight: 'bold',
                   }}
@@ -53,6 +52,12 @@ const Close = () => {
         </div>
       </div>
     );
+  }
+  else{
+    return(
+      <div></div>
+    );
+    
   }
 };
 export default Close;

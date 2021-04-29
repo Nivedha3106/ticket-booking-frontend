@@ -24,9 +24,9 @@ const Open = () => {
     return (
       <div className="App">
         <Navbar />
-        <div className="contene">
+        <div className="content">
           <h2 style={{ color: 'crimson' }}>Open Seats</h2>
-          {open.response.map((value, key) => {
+          {open.map((value, key) => {
             console.log(value, key);
             return (
               <div className="home">
@@ -36,10 +36,13 @@ const Open = () => {
                     color: 'white',
                     backgroundColor: '#f1356d',
                     borderRadius: '8px',
+                    alignContent: 'center',
                     padding: '10px',
-                    marginLeft: '250px',
-                    marginTop: '30px',
-                    width: '130px',
+                    margin:'10px',
+                    marginLeft: '70px',
+                    marginRight: '120px',
+                    marginTop: '20px',
+                    width: '50px',
                     fontSize: '18px',
                     fontWeight: 'bold',
                   }}
@@ -51,6 +54,11 @@ const Open = () => {
           })}
         </div>
       </div>
+    );
+  }
+  else{
+    return(
+      <div></div>
     );
   }
 };

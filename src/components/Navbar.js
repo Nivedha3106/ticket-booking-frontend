@@ -7,7 +7,7 @@ import '../index.css';
 const Navbar = () => (
   // eslint-disable-next-line react/react-in-jsx-scope
   <nav className="main">
-    <h1>Seats Details</h1>
+    <h1>Seat Details</h1>
     <div className="links">
       <a
         href="/open"
@@ -30,7 +30,7 @@ const Navbar = () => (
         Close seats
       </a>
       <a
-        href="/Seat"
+        href="/Seatstore"
         style={{
           color: 'white',
           backgroundColor: '#351cbf',
@@ -38,7 +38,7 @@ const Navbar = () => (
         }}
       >
         {' '}
-        Seat Status
+        Add seats
       </a>
     </div>
   </nav>

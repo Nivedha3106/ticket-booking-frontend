@@ -23,7 +23,7 @@ const Seatstore = () => {
     const Data = { seatNo: State.seatNo, seatStatus: State.seatStatus };
     axios.post('https://online-bus-ticket-booking.herokuapp.com/api/seats/store', Data).then(() => {
       alert('Seat details are added successfully');
-      window.location.href = '/Seat';
+      window.location.href = '/Navbar';
     });
   };
   return (
