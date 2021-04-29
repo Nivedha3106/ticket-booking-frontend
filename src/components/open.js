@@ -27,7 +27,6 @@ const Open = () => {
         <div className="contene">
           <h2 style={{ color: 'crimson' }}>Open Seats</h2>
           {open.response.map((value, key) => {
-            // eslint-disable-next-line no-console
             console.log(value, key);
             return (
               <div className="home">
