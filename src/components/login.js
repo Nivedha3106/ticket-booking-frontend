@@ -76,7 +76,6 @@ const UserLogin = () => {
               </button>
             </td>
             <td>
-              // eslint-disable-next-line react/no-unescaped-entities
               <p>Don't have an account already? Sign Up!!</p>
               <button
                 onClick={SignUpHandle}
