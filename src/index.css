@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  padding:0;
+
+}
+.main {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.main h1 {
+  color:red;
+}
+.main .links {
+  margin-left: auto;
+}
+.main a {
+  /* color:#351cbf; */
+  color:"white";
+  background-color:"#351cbf";
+  border-radius:"8px";
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.user a:hover {
+  color: #351cbf;
+  
+}
+.content {
+  max-width: 600px;
+  float: center;
+  margin: 40px 40px 40px;
+  padding: 20px 20px 20px;
+}
+
+.user td, tr {
+  border-collapse: collapse;
+  float:center;
+  padding: 20px;
+  margin: 20px 20px 20px;
+}
+
+.content {
+  max-width: 600px;
+  float: center;
+  margin: 40px 40px 40px;
+  padding: 20px 20px 20px;
+}
+
+.busList td, tr {
+  border-collapse: collapse;
+  float:center;
+  padding: 20px;
+  margin: 20px 20px 20px;
+}
+.login td, tr {
+  border-collapse: collapse;
+  float:center;
+  padding: 20px;
+  margin: 20px 20px 20px;
+}
+.content {
+  max-width: 600px;
+  float: center;
+  margin: 40px 40px 40px;
+  padding: 20px 20px 20px;
+}
+.App td, tr {
+  border-collapse: collapse;
+  float:center;
+  padding: 20px;
+  margin: 20px 20px 20px;
+}
