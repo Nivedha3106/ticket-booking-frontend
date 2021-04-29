@@ -26,8 +26,6 @@ import Close from './components/close';
 import Seatstore from './components/Seatstore';
 
 const App = () => (
-  // eslint-disable-next-line react/jsx-filename-extension
-  // eslint-disable-next-line react/react-in-jsx-scope
   <Router>
     <Route path="/" exact component={login} />
     <Route path="/login" component={login} />
@@ -39,11 +37,11 @@ const App = () => (
     <Route path="/delete" component={Delete} />
     <Route path="/Seat" component={Seat} />
     <Route path="/open" component={Open} />
-    // eslint-disable-next-line react/jsx-tag-spacing
+   
     <Route path="/close" component={Close} />
-    // eslint-disable-next-line no-undef
+    
     <Route path="/seatstore" component={Seatstore} />
-    {/* Route path ='/main' exact component ={Main} /> */}
+    
 
     <Route path="/BusList" component={BusList} />
   </Router>
