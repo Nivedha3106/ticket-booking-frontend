@@ -10,14 +10,24 @@ const Main = () => (
     <h1>Online Bus Ticket Booking</h1>
     <div className="links">
       <a
-        href="/Seat"
+        href="/Home"
         style={{
           color: 'white',
           backgroundColor: '#351cbf',
           borderRadius: '8px',
         }}
       >
-        Seat
+        Home
+      </a>
+      <a
+        href="/Seatstore"
+        style={{
+          color: 'white',
+          backgroundColor: '#351cbf',
+          borderRadius: '8px',
+        }}
+      >
+        Seats
       </a>
       <a
         href="/BusList"
